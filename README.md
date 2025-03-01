@@ -184,4 +184,6 @@ This fine-tuned model aims to improve text extraction and structured data proces
     "Nơi đăng kí, ngày đăng kí": "Bắc Ninh, ngày 11 tháng 03 năm 2019"
 }
 ```
+## Acknowledgments
+- [Qwen2 VL](https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct)
 
