@@ -5,6 +5,9 @@ This repository showcases the results of a fine-tuned version of  **Qwen2-VL 2B*
 
 This fine-tuned model aims to improve text extraction and structured data processing for Vietnamese documents, making it a potentially useful tool for automation and digital transformation.
 
+## Usage
+check out the [inference.ipynb](inference.ipynb) notebook for step-by-step usage.
+
 ## Examples
 
 ### Citizen Identity Card
@@ -37,7 +40,7 @@ This fine-tuned model aims to improve text extraction and structured data proces
     "Quê quán": "Tân Thành, Kim Sơn, Ninh Bình",
     "Nơi thường trú": "Xóm 6, Tân Thành, Kim Sơn, Ninh Bình",
     "Có giá trị đến": "04/09/2034",
-    "Đặc điểm nhân dạng": "sẹo chấm c: 1cm trên đuôi mắt trái",
+    "Đặc điểm nhân dạng": "sẹo chấm c:1cm trên đuôi mắt trái",
     "Ngày cấp": "10/12/2022",
     "Nơi cấp": "CỤC TRƯỞNG CỤC CẢNH SÁT QUẢN LÝ HÀNH CHÍNH VỀ TRẬT TỰ XÃ HỘI",
     "Người ký": "Nguyễn Quốc Hùng",
@@ -68,14 +71,14 @@ This fine-tuned model aims to improve text extraction and structured data proces
     "PHƯƠNG TIỆN (VEHICLE)": {
         "Biển đăng kí (Registration Number)": "30A-822.10",
         "Số quản lý (Vehicle Inspection No.)": "2903V-112077",
-        "Loại phương tiện (Type)": "ô tô con",
+        "Loại phương tiện (Type)": "Ô tô con",
         "Nhãn hiệu (Mark)": "TOYOTA",
         "Số loại (Model code)": "Vios e NCP150L-BEMRKU",
         "Số máy (Engine Number)": "1NZZ342190",
         "Số khung (Chasis Number)": "RL4BT9F30F4017762",
         "Năm, Nước sản xuất (Manufactured Year and Country)": "2015, Việt Nam",
         "Niên hạn SD (Lifetime limit to)": "",
-        "Kinh doanh vận tải (Commercial Use)": "Có",
+        "Kinh doanh vận tải (Commercial Use)": "Không",
         "Cải tạo (Modification)": "Không"
     },
     "THÔNG SỐ KỸ THUẬT (SPECIFICATIONS)": {
@@ -93,15 +96,15 @@ This fine-tuned model aims to improve text extraction and structured data proces
         "Thể tích làm việc của động cơ (Engine Displacement)": "1497 (cm3)",
         "Công suất lớn nhất/tốc độ quay (Max. output/rpm)": "80(kW)/6000vph",
         "Số sê-ri (No.)": "KC-4003297",
-        "Số lượng lốp, cỡ lốp/trục (Number of tires; tire size/axle)": "1: 2; 185/60R15\n2: 1; 185/60R15",
-        "Có lắp thiết bị giám sát hành trình (Equipped with Tachograph)": "Có",
+        "Số lượng lốp, cỡ lốp/trục (Number of tires; tire size/axle)": "1: 2; 185/60R15\n2: 2; 185/60R15",
+        "Có lắp thiết bị giám sát hành trình (Equipped with Tachograph)": "Không",
         "Không cấp tem kiểm định (Inspection stamp was not issued)": "Không",
         "Ghi chú": "Biển đăng ký nền trắng"
     },
     "THÔNG TIN KHÁC": {
         "Số phiếu kiểm định (Inspection Report No)": "2909D-13744/17",
         "Có hiệu lực đến hết ngày (Valid until)": "10/02/2018",
-        "Issued on Day/Month/Year": "Hà Nội, ngày 11 tháng 8 năm 2017"
+        "Issued on Day/Month/Year": "Hà Nội, ngày 14 tháng 8 năm 2017"
     }
 }
 ```
@@ -137,12 +140,12 @@ This fine-tuned model aims to improve text extraction and structured data proces
     "Nơi cấp, ngày cấp": "Hải Phòng, ngày 07 tháng 12 năm 2012",
     "Người ký": "Đàm Xuân Luyện",
     "CÁC LOẠI XE CƠ GIỚI ĐƯỢC ĐIỀU KHIỂN": [
-        "Xe mô tô 2 bánh có dung tích xilanh từ 50 đến dưới 175cm3 (Motor cycle between 50c.c dưới 175c.c)",
+        "Xe mô tô 2 bánh có dung tích xilanh từ 50 đến dưới 175cm3 (Motor cycle between 50 den dưới 175cm3)",
         "Ôtô tải, máy kéo kéo rơmooc, có trọng tải từ 3500 kg trở lên và xe hạng B1, B2 (Truck, tractor with a trailer exceeding 3,500 kgs and vehicles of classes B1, B2)"
     ],
     "Ngày trúng tuyển": [
-        "11/12/2002",
-        "16/01/2006"
+        "16/01/2006",
+        "11/12/2002"
     ]
 }
 ```
@@ -164,26 +167,22 @@ This fine-tuned model aims to improve text extraction and structured data proces
 
 ```
 {
-    "Tên chủ xe": "PHẠM VĂN HÀO - 1995",
-    "Địa chỉ": "Lạc Thổ Bắc, TT Hồ, Thuận Thành, BN",
-    "Nhãn hiệu": "HYUNDAI",
-    "Số máy": "G4LCJF701482",
-    "Số khung": "41BAKN012085",
-    "Số loại": "ACCENT",
-    "Loại xe": "Ô tô con",
-    "Dung tích": "1368",
-    "Màu sơn": "Bạc",
-    "Tải trọng": {
-        "Hàng hoá": "",
-        "Số chỗ ngồi": "5",
-        "Đứng": "",
-        "Nằm": ""
-    },
-    "Giá trị đến ngày": "",
+    "Tên chủ xe (Owner\'s full name)": "PHẠM VĂN HẢO - 1995",
+    "Địa chỉ (Address)": "Lạc Thọ Bắc, TT Hồ, Thuận Thành, BN",
+    "Nhãn hiệu (Brand)": "HYUNDAI",
+    "Số loại (Model code)": "ACCENT",
+    "Loại xe (Type)": "Ô tô con",
+    "Màu sơn (Color)": "Bạc",
+    "Số máy (Engine number)": "G4LCJF701482",
+    "Số khung (Chassis number)": "41BAKN012085",
+    "Số chỗ ngồi (Seats)": "5",
+    "Trọng tải (Gross weight)": "kg",
+    "KL toàn bộ (Total mass)": "1368",
+    "KL kéo theo (Towed mass)": "",
     "Hoạt động trong phạm vi": "",
-    "Biển số đăng kí": "99A-280.96",
-    "Đăng kí lần đầu ngày": "11/03/2019",
-    "Nơi đăng kí, ngày đăng kí": "Bắc Ninh, ngày 11 tháng 03 năm 2019"
+    "Biển số đăng kí (Number plate)": "99A-280.96",
+    "Giá trị đến ngày (Date of expiry)": "",
+    "Nơi đăng kí, ngày đăng kí": "Bắc ninh, ngày 11 tháng 03 năm 2019"
 }
 ```
 ## Acknowledgments
